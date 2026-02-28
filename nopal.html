@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<!-- Navigasi -->
+<nav class="navbar">
+  <div class="logo">Luxe d'Amour</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#gallery">gallery</a></li>
+    <li><a href="#testimoni">Testimoni</a></li>
+    <li><a href="#tentang">Tentang Kami</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+</nav>
+
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #7e3301, #310404, #ff6f61);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    position: relative;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #88b04b;
+  }
+
+  /* Efek garis bawah animasi */
+  .nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #88b04b;
+    transition: width 0.3s;
+    margin-top: 5px;
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+</style>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe d'Amour</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #280201, #924807, #442d02, #710e05);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      color: #333;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: auto;
+      margin: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Desain baju -->
+<section id="gallery" class="gallery"></section>
+<div class="gallery-container">
+    <div class="galley-card">
+
+  <header>
+    <h1>Luxe d'Amour</h1>
+    <p>Elegance in Every Stitch</p>
+  </header>
+
+  <section class="gallery">
+  <!-- 12 gambar desain baju dengan harga di bawah -->
+  <div class="item">
+    <img src="wkwkwk/WhatsApp Image 2026-02-01 at 18.47.15.jpeg" alt="Desain Baju 1">
+    <p class="harga">Rp100.000</p>
+  </div>
+  <div class="item">
+    <img src="wkwkwk/WhatsApp Image 2026-02-01 at 18.47.15 (2).jpeg" alt="Desain Baju 2">
+    <p class="harga">Rp120.000</p>
+  </div>
+  <div class="item">
+    <img src="wkwkwk/WhatsApp Image 2026-02-01 at 18.47.16.jpeg" alt="Desain Baju 3">
+    <p class="harga">Rp150.000</p>
+  </div>
+  <div class="item">
+    <img src="wkwkwk/WhatsApp Image 2026-02-01 at 18.47.16 (1).jpeg" alt="Desain Baju 4">
+    <p class="harga">Rp180.000</p>
+  </div>
+  <div class="item">
+    <img src="wkwkwk/WhatsApp Image 2026-02-01 at 18.47.16 (2).jpeg" alt="Desain Baju 5">
+    <p class="harga">Rp200.000</p>
+  </div>
+  <div class="item">
+    <img src="wkwkwk/WhatsApp Image 2026-02-01 at 18.47.17.jpeg" alt="Desain Baju 6">
+    <p class="harga">Rp130.000</p>
+  </div>
+  <div class="item">
+    <img src="wkwkwk/WhatsApp Image 2026-02-01 at 19.12.55.jpeg" alt="Desain Baju 7">
+    <p class="harga">Rp140.000</p>
+  </div>
+  <div class="item">
+    <img src="wkwkwk/WhatsApp Image 2026-02-01 at 19.12.55 (1).jpeg" alt="Desain Baju 8">
+    <p class="harga">Rp160.000</p>
+  </div>
+  <div class="item">
+    <img src="wkwkwk/WhatsApp Image 2026-02-01 at 19.12.56.jpeg" alt="Desain Baju 9">
+    <p class="harga">Rp170.000</p>
+  </div>
+  <div class="item">
+    <img src="wkwkwk/WhatsApp Image 2026-02-01 at 19.12.56 (1).jpeg" alt="Desain Baju 10">
+    <p class="harga">Rp190.000</p>
+  </div>
+  <div class="item">
+    <img src="wkwkwk/WhatsApp Image 2026-02-01 at 19.12.56 (2).jpeg" alt="Desain Baju 11">
+    <p class="harga">Rp200.000</p>
+  </div>
+  <div class="item">
+    <img src="wkwkwk/WhatsApp Image 2026-02-01 at 19.12.57.jpeg" alt="Desain Baju 12">
+    <p class="harga">Rp110.000</p>
+  </div>
+</section>
+
+<!-- Section Bahan Baju -->
+<section id="bahan-baju" class="bahan">
+  <h2>Bahan-Bahan Baju Luxe d'Amour</h2>
+  <p class="subjudul">Kami menggunakan bahan pilihan untuk kenyamanan dan gaya terbaik</p>
+
+  <div class="bahan-container">
+    <div class="bahan-item">
+      <h3>Katun</h3>
+      <p>Nyaman, adem, dan menyerap keringat. Cocok untuk pakaian sehari-hari.</p>
+    </div>
+    <div class="bahan-item">
+      <h3>Sutra</h3>
+      <p>Halus, mewah, dan berkilau. Memberikan kesan elegan dan eksklusif.</p>
+    </div>
+    <div class="bahan-item">
+      <h3>Linen</h3>
+      <p>Ringan, breathable, dan stylish. Ideal untuk musim panas.</p>
+    </div>
+    <div class="bahan-item">
+      <h3>Wol</h3>
+      <p>Hangat dan lembut. Cocok untuk pakaian musim dingin.</p>
+    </div>
+    <div class="bahan-item">
+      <h3>Polyester</h3>
+      <p>Tahan lama, tidak mudah kusut, dan mudah dirawat.</p>
+    </div>
+    <div class="bahan-item">
+      <h3>Denim</h3>
+      <p>Kuat, awet, dan trendi. Bahan utama untuk jeans dan jaket kasual.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .bahan {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #380303, #553102, #4f2501);
+    color: #440909;
+  }
+
+  .bahan h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+  }
+
+  .subjudul {
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #ffe;
+  }
+
+  .bahan-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .bahan-item {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .bahan-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+  }
+
+  .bahan-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #ffeb3b;
+  }
+
+  .bahan-item p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #fff;
+  }
+</style>
+
+
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .item {
+    width: 200px;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .item:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .harga {
+    font-weight: bold;
+    color: #6b5b95;
+    background: rgba(255,255,255,0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+</style>
+
+
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .item {
+    width: 200px;
+    text-align: center;
+  }
+
+  .item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  .harga {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #6b5b95;
+    background: rgba(255,255,255,0.8);
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+</style>
+
+
+    <!-- Section Testimoni -->
+<section id="testimoni" class="testimoni">
+  <h2>Apa Kata Mereka?</h2>
+  <div class="testimoni-container">
+    <div class="testimoni-card">
+      <p>"Setiap detail baju dari Luxe d'Amour terasa begitu elegan. Saya merasa percaya diri setiap kali memakainya."</p>
+      <h4>- Clara, Fashion Enthusiast</h4>
+    </div>
+    <div class="testimoni-card">
+      <p>"Desainnya unik dan kualitasnya luar biasa. Luxe d'Amour benar-benar menghadirkan seni dalam fashion."</p>
+      <h4>- Daniel, Model</h4>
+    </div>
+    <div class="testimoni-card">
+      <p>"Pelayanan ramah dan koleksi bajunya memikat hati. Luxe d'Amour adalah pilihan terbaik untuk tampil stylish."</p>
+      <h4>- Aisyah, Pelanggan Setia</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Section Tentang Kami -->
+<section id="tentang" class="tentang">
+  <h2>Tentang Kami</h2>
+  <p class="subjudul">Luxe d'Amour – Elegance in Every Stitch</p>
+
+  <div class="tentang-container">
+    <p>
+      Luxe d'Amour adalah brand fashion yang lahir dari cinta terhadap seni dan keanggunan. 
+      Kami menghadirkan koleksi baju yang memadukan desain modern dengan sentuhan klasik, 
+      sehingga setiap karya memiliki cerita dan keindahan tersendiri.
+    </p>
+    <p>
+      Visi kami adalah menjadi pilihan utama bagi mereka yang ingin tampil elegan dan percaya diri. 
+      Dengan bahan berkualitas tinggi dan detail yang sempurna, Luxe d'Amour berkomitmen 
+      untuk memberikan pengalaman berpakaian yang istimewa.
+    </p>
+    <p>
+      Misi kami adalah menghadirkan fashion yang tidak hanya indah dipandang, 
+      tetapi juga nyaman dikenakan, sehingga setiap pelanggan merasakan kebahagiaan 
+      dalam setiap jahitan.
+    </p>
+  </div>
+</section>
+
+<style>
+  .tentang {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #000000, #6a3f01, #591f03);
+    color: #fcfcfc;
+  }
+
+  .tentang h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+  }
+
+  .subjudul {
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #ffe;
+  }
+
+  .tentang-container {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1em;
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .tentang-container p {
+    margin-bottom: 20px;
+  }
+</style>
+
+
+<style>
+  .testimoni {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #a30805, #d18022, #ba9915);
+    color: #fff;
+  }
+
+  .testimoni h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+  }
+
+  .testimoni-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .testimoni-card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .testimoni-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+  }
+
+  .testimoni-card p {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .testimoni-card h4 {
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0;
+  }
+</style>
+
+
+  </section>
+
+<!-- Section Kontak -->
+<section id="kontak" class="kontak">
+  <h2>Kontak Kami</h2>
+  <p class="subjudul">Hubungi Luxe d'Amour untuk informasi dan pemesanan</p>
+
+  <div class="kontak-container">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/6289637761693" target="_blank" class="kontak-btn whatsapp">
+      WhatsApp
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/luxed_amour15?igsh=dDVodjQ1amh4azNl" target="_blank" class="kontak-btn instagram">
+      Instagram
+    </a>
+  </div>
+</section>
+
+<style>
+  .kontak {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #de9f00, #f94825, #c61815);
+    color: #fff;
+  }
+
+  .kontak h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+  }
+
+  .subjudul {
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #ffe;
+  }
+
+  .kontak-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .kontak-btn {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+
+  .kontak-btn.whatsapp {
+    background: #25D366;
+    color: #fff;
+  }
+
+  .kontak-btn.instagram {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    color: #fff;
+  }
+
+  .kontak-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  }
+</style>
+
+<iframe src="https://www.google.com/maps/embed?pb=!4v1772259903487!6m8!1m7!1scEaeQrs5FgbYgKBNpQyXEQ!2m2!1d-6.231418095852074!2d107.0748363519143!3f179.92754697468354!4f-18.71998722421766!5f0.7820865974627469" width="1350" height="500" style="border:0;" allowfullscreen="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <footer>
+  <p>&copy; 2026 Luxe d'Amour. All Rights Reserved.</p>
+  <p>Alamat: Bekasi, Tambun Selatan</p>
+</footer>
+
+</body>
+</html>
+
